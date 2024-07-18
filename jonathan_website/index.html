@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="app" href="python/app.py">
+    <link rel="js" href="js/app.js">
+
+
+    <title>Upload Site</title>
+</head>
+<header>
+    <h1 class="company">Jonathan's Serving Company Upload Site</h1>
+    <nav class="navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="html/contactus.html">Contact</a>
+    </nav>
+</header>
+<body>
+    <div class="file_upload_box">
+        <h2>File Upload</h2>
+        <form id="uploadForm">
+            <input type="file" id="fileInput" name="file">
+            <button type="submit">Upload</button>
+        </form>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button type="submit">Login</button>
+        </form>
+        <form id="registerForm">
+            <input type="text" id="regUsername" placeholder="Username">
+            <input type="password" id="regPassword" placeholder="Password">
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <div id="message" class="message"></div>
+    <div id="error" class="error"></div>
+
+    <div class="file-list" id="fileList"></div>
+</body>
+</html>
